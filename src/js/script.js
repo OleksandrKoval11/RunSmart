@@ -4,7 +4,16 @@ const slider = tns({
 		slideBy: 'page',
 		autoplay: false,
 		controls: false,
-		nav: false
+		nav: false,
+		responsive: {
+			800: {
+			  nav: true
+			},
+			800: {
+				nav: false
+			  }
+		  }
+
 	});
 
 document.querySelector('.prev').addEventListener('click', function () {
@@ -35,3 +44,17 @@ toggleSlide('.catalog-item__link');
 toggleSlide('.catalog-item__back');
 
 
+//modal
+$('[data-modal=consultation]').on('click',function(){
+	$('.overlay, #consultation').fadeIn();
+});
+$('.modal__close').on('click', function(){
+	$('.overlay, #consultation, #thanks, #order').fadeOut();
+});
+
+$('.button_mini').each(function(i){
+	$(this).on('click',function(){
+		$('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+		$('.overlay, #order').fadeIn();
+	})
+});
