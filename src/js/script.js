@@ -86,3 +86,15 @@ validateForms('#consultation form');
 validateForms('#order form');
 
 $('input[name=phone]').mask("+1 (999) 999-99-99");
+
+//smoth scroll and pageup
+
+$(window).scroll(function() {
+	if($(this).scrollTop() > 1600) {
+		$('.pageup').fadeIn();
+	} else {
+		$('.pageup').fadeOut();
+	}
+});
+
+new WOW().init();

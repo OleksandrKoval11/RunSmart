@@ -7,13 +7,13 @@
     <title>Pulse</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <!-- <link rel="stylesheet" href="css/slick.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
-    <div class="promo">
+    <div id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -65,19 +65,19 @@
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantage__wrapper">
                 <div class="advantage__item">
-                    <img src="icons/second_bg/cup.png" alt="cup" class="advantage_icon">
+                    <img src="icons/second_bg/cup.png" alt="cup" class="advantage__icon animate__bounce animate__animated animate__infinite">
                     <div class="advantage__subtitle">Делимся опытом</div>
                     <div class="advantage__descr">Наши сотрудники всегда готовы поделиться своим опытом, 
                         так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                 </div>
                 <div class="advantage__item">
-                    <img src="icons/second_bg/heart.png" alt="heart" class="advantage_icon">
+                    <img src="icons/second_bg/heart.png" alt="heart" class="advantage__icon advantage__icon_animated">
                     <div class="advantage__subtitle">Заботимся о здоровье</div>
                     <div class="advantage__descr">Мы работаем для того, 
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                 </div>
                 <div class="advantage__item">
-                    <img src="icons/second_bg/shoe.png" alt="shoe" class="advantage_icon">
+                    <img src="icons/second_bg/shoe.png" alt="shoe" class="advantage__icon animate__swing animate__animated animate__infinite">
                     <div class="advantage__subtitle">Учим бегать</div>
                     <div class="advantage__descr">Помогаем с обучением 
                         правильной технике бега! 
@@ -166,7 +166,33 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/cards/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__subtitle">Пульсометр Suunto M2</div>
+                            <div class="catalog-item__descr">Пульсометр начального уровня с комфортным тканевым ремешком</div>
+                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            <a href="#" class="catalog-item__back">Назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">4 750 грн.</div>
+                            <div class="catalog-item__price">4 500 грн.</div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/cards/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -218,8 +244,8 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/cards/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <div class="catalog-item__subtitle">Пульсометр Suunto M2</div>
+                            <div class="catalog-item__descr">Пульсометр начального уровня с комфортным тканевым ремешком</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
                         <ul class="catalog-item__list">
@@ -244,34 +270,8 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/cards/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">Назад</a>
-                        </ul>
-                    </div>
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 грн.</div>
-                            <div class="catalog-item__price">4 500 грн.</div>
-                        </div>
-                        <button class="button button_mini">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/cards/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
+                            <div class="catalog-item__descr">Улучшенная версия Polar FT1, имеющая следующие улучшения:</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
                         <ul class="catalog-item__list">
@@ -294,7 +294,7 @@
                 </div>
             </div>
             <div class="catalog__content">
-                <div class="catalog-item">
+                <div class="catalog-item ">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/cards/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -381,7 +381,7 @@
     <section class="reviews">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="reviews__wrapper">
+            <div class="reviews__wrapper animate__fadeInUp animate__animated wow">
                 <img src="img/reviews/review_1.png" alt="1" class="reviews__img">
                 <div class="reviews__review">
                     <div class="reviews__title">Ирина Иванченко</div>
@@ -393,7 +393,7 @@
                 </div>
             </div>
             <hr>
-            <div class="reviews__wrapper">
+            <div class="reviews__wrapper animate__fadeInUp animate__animated wow">
                 <img src="img/reviews/review_2.png" alt="2" class="reviews__img">
                 <div class="reviews__review">
                     <div class="reviews__title">Иван Сёмочкин</div>
@@ -403,7 +403,7 @@
                 </div>
             </div>
             <hr>
-            <div class="reviews__wrapper">
+            <div class="reviews__wrapper animate__fadeInUp animate__animated wow">
                 <img src="img/reviews/review_3.png" alt="3" class="reviews__img">
                 <div class="reviews__review">
                     <div class="reviews__title">Юлия Дашкина</div>
@@ -464,10 +464,15 @@
         </div>
     </div>
     
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
